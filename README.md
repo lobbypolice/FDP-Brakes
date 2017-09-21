@@ -2,6 +2,8 @@
 
 ## Project Topic
 
+Application to automate and simplify the searches of various online databases to assess prices and attributes of numerous part numbers of brakes. 
+
 ## Requirements
 
 * Standalone application that will work in windows
