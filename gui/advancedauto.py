@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-#
+#scrapy runspider advanceauto.py -o quotes.json
 class AdvancedautoSpider(scrapy.Spider):
     name = 'advancedauto'
     allowed_domains = ['https://shop.advanceautoparts.com/']
