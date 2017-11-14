@@ -1,5 +1,8 @@
 # CMSC 451 Senior Project 
 
+## To Run
+scrapy crawl "SPIDERNAME" -o "OUTPUTFILE"
+
 ## Python Guidelines 
 http://docs.python-guide.org/en/latest/writing/structure/
 
