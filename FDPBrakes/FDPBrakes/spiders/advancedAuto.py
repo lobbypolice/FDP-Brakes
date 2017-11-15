@@ -9,8 +9,9 @@ class advancedAuto(scrapy.Spider):
         for model in response.css('div.aap-pl-item'):
             yield{
                 'modelNumber': model.css('span.aap-pl-item__prno::text').extract_first(),
-                'name': model.css('h3.aap-pl-item__pname::text').extract_first(),
-                'price': model.css('span.aap-pl-item__price::text').extract_first()[2:-2], 
+                'name': mode.css('h3.aap-pl-item__pname').re_first('<b>(.+?)<\/b>'),
+                'type': model.css('h3.aap-pl-item__pname::text').extract_first(),
+                'price': model.css('span.aap-pl-item__price::text').extract_first()[2:-1], 
             }
     def __init__(self):
         for i in range(0, 11840, 10):
