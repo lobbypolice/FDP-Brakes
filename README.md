@@ -2,6 +2,8 @@
 
 ## To Run
 scrapy crawl "SPIDERNAME" -o "OUTPUTFILE"
+becareful of which directory you are working on. Also make sure that the all the spiders are working before you begin the crawl. 
+
 
 ## Python Guidelines 
 http://docs.python-guide.org/en/latest/writing/structure/
