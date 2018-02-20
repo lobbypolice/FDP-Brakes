@@ -1,6 +1,11 @@
 const Nightmare = require('nightmare')
-Nightmare()
+const nightmare = Nightmare({ 
+    show: true, 
+    waitTimeout: 100000 // in ms
+})
+nightmare
     .goto('https://news.ycombinator.com/')
+    .wait(2000)
     .evaluate(() => document.querySelector('.storylink').innerText)
     .end()
     .then(result => {
