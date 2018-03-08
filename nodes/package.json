@@ -1,0 +1,19 @@
+{
+  "name": "fdpbrakes",
+  "version": "1.0.0",
+  "description": "A webscrapper for fdpbrakes",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobbypolice/FDP-Brakes.git"
+  },
+  "author": "Kyle Hammerschmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lobbypolice/FDP-Brakes/issues"
+  },
+  "homepage": "https://github.com/lobbypolice/FDP-Brakes#readme"
+}
