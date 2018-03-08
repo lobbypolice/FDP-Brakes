@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/lobbypolice/FDP-Brakes/issues"
   },
-  "homepage": "https://github.com/lobbypolice/FDP-Brakes#readme"
+  "homepage": "https://github.com/lobbypolice/FDP-Brakes#readme",
+  "dependencies": {
+    "electron": "^1.8.3",
+    "puppeteer": "^1.1.1"
+  }
 }
