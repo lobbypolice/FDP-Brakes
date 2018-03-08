@@ -1,22 +1,13 @@
-const Nightmare = require('nightmare')
-const assert = require('assert')
+function runTest() {
+  var Xray = require('x-ray');
+  var x = Xray();
 
-describe('Load a Page', function() {
-  // Recommended: 5s locally, 10s to remote server, 30s from airplane ¯\_(ツ)_/¯
-  this.timeout('30s')
-
-  let nightmare = null
-  beforeEach(() => {
-    nightmare = new Nightmare()
-  })
-
-  describe('/ (Home Page)', () => {
-    it('should load without error', done => {
-      // your actual testing urls will likely be `http://localhost:port/path`
-      nightmare.goto('https://gethoodie.com')
-        .end()
-        .then(function (result) { done() })
-        .catch(done)
-    })
-  })
-})
+  x('https://blog.ycombinator.com/', '.post', [{
+      title: 'h1 a',
+      link: '.article-title@href'
+    }])
+    .paginate('.nav-previous a@href')
+    .limit(3)
+    .write('results.json')
+}
+document.getElementById('test').onclick = runTest;

@@ -8,22 +8,19 @@
 </head>
 
 <body>
-    
-    <h1>Hello World!</h1>
-    We are using node
-    <script>
-        document.write(process.versions.node)
-    </script>, Chrome
-    <script>
-        document.write(process.versions.chrome)
-    </script>, and Electron
-    <script>
-        document.write(process.versions.electron)
-    </script>.
-    <button id="btnEd"> Test</button>
+    <form>
+        Brake model number:<br>
+        <input type ="text" name="brake"><br>
+        Zip code:<br>
+        <input type ="text" name="zip">
+    </form>
+    <button id="autozone"> Autozone</button>
+    <button id="advancedAuto">advancedAuto</button>
+    <button id="orielly">orielly</button>
+    <button id="napa">napa</button>
+    <button id="pepboys">pepboys</button>
     <script>
         require("./coolScripts/test.js")
-        require("./coolScripts/api.js")
     </script>
 
 </body>
