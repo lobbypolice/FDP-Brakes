@@ -19,7 +19,7 @@ class napa(scrapy.Spider):
         for model in response.css('div.listing-item'):
             yield{
                 'modelNumber' : model.css( 'div.listing-detail-text.listing-detail-text-part::text').extract_first(),
-                'name' : model.css('#productTitle::text').extract_first(),
+                'name' : model.css('a.listing-item-title::text').extract_first(),
                 'price' : model.css('span.listing-price-value::text').extract_first(),
             }
             #productListItemADOAD7822_203472555 > div.listing-content > div.listing-detail > div.listing-detail-item.listing-detail-item-part > div.listing-detail-text.listing-detail-text-par
