@@ -1,7 +1,7 @@
 function getData(name, screenshot) {
     const puppeteer = require('puppeteer');
     const devices = require('puppeteer/DeviceDescriptors');
-
+    console.log(name + "This is working")
     (async () => {
         const browser = await puppeteer.launch({headless: false});
         const page = await browser.newPage();
