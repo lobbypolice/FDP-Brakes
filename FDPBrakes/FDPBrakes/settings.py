@@ -64,7 +64,12 @@ DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+    'scrapy_crawlera.CrawleraMiddleware': 300,
+
 }
+CRAWLERA_ENABLED = True
+CRAWLERA_APIKEY = "b23651cd46fd43e7aa92c8061202a73f"
+CRAWLERA_PRESERVE_DELAY = True 
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function getData(name, screenshot) {
     const puppeteer = require('puppeteer');
     const devices = require('puppeteer/DeviceDescriptors');
@@ -26,3 +27,20 @@ document.getElementById('napa').onclick  = function(){
 document.getElementById('pepboys').onclick = function(){
     getData("https://www.pepboys.com/", "pepboys.png");
 } 
+=======
+"use strict";
+var csv = require("csv-query");
+ 
+ 
+csv.createFromFile(
+  __dirname + "/Advanced.csv"
+).then(function (db) {
+  return db.findOne({ 
+    modelNumber: "#GNAD785" 
+  });
+}).then(function (record) {
+  return record;
+}).catch(function (error) {
+  throw error;
+});
+>>>>>>> f1788c3b240da2380fba714f1e87e4112800e50e

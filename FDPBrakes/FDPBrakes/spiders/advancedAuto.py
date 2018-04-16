@@ -13,6 +13,7 @@ class advancedAuto(scrapy.Spider):
                 'type': model.css('h3.aap-pl-item__pname::text').extract_first(),
                 'price': model.css('span.aap-pl-item__price::text').extract_first()[2:-1], 
             }
+            #aap-pl-js-itemlist > div:nth-child(1)
     def __init__(self):
         for i in range(0, 11840, 10):
             self.start_urls.append("https://shop.advanceautoparts.com/web/PartSearchCmd?storeId=10151&catalogId=10051&pageId=partTypeList&suggestion=&actionSrc=Form&langId=-1&categoryId=15694&beginIndex=" + str(i) + "&sortBy=4&_r=0.03323842671958288#")
