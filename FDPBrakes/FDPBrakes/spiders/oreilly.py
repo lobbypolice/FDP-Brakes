@@ -14,7 +14,7 @@ class napa(scrapy.Spider):
                     writer.append(row)
         for x in writer:
             x = x[2:-2]
-            self.start_urls.append("https://www.napaonline.com/en/search?q=" + x)
+            self.start_urls.append("https://www.oreillyauto.com/search?q=" + x)
     def parse(self, response):
         for model in response.css('div.product-container'):
             yield{
