@@ -1,2 +1,4 @@
 image: true
 project: 277580
+stacks:
+  default: scrapy:1.5-py3
