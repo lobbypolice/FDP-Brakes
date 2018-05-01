@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.exe
-*.txt
 *.dat
 *.sln
 .vs/
