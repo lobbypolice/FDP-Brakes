@@ -1,4 +1,7 @@
 # CMSC 451 Senior Project 
+## UPDATED REPO 
+Please refer to https://github.com/kshammer/FDPBrakes for the most up to date changes on this project. 
+
 
 ## To Run
 scrapy crawl "SPIDERNAME" -o "OUTPUTFILE"
